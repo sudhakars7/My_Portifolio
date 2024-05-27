@@ -1,3 +1,48 @@
+/* src/MainPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.content-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid white;
+  animation: fadeIn 1s ease-out;
+}
+
+.content-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.content-text p {
+  font-size: 1.2em;
+  color: #f1f1f1;
+  animation: fadeIn 2s ease-out;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +80,197 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header{
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.branding .name{
+  font-size: 24px;
+  color: #6c757d;
+  margin: 0;
+}
+.branding .paraname {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #007bff; /* Change to your accent color */
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
+    display: none; /* Hide the menu by default on small screens */
+  }
+  
+  .navigation ul.show {
+    display: flex; 
+  }
+  
+  .hamburger {
+    display: block;
+  }
+}
+/* src/Footer.css */
+.footer {
+  background-color: #b9bdc2; /* Background color */
+  padding: 20px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #007bff; /* Change to your accent color */
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.contact-info a {
+  color: #0f75e2;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.content-section{ 
+
+ max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-out;
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+}
+
+.content-text p {
+  font-size: 1.2em;
+  color: #f1f1f1;
+  animation: fadeIn 2s ease-out;
+  color: #ffffff; /* Ensure text color is white */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+}
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.experience {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.experience h4 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.experience p {
+  font-size: 1em;
+  color: #6c757d;
+  margin: 5px 0;
+}
+
+.experience ul {
+  list-style-type: disc;
+  margin: 20px 0 0 20px;
+  padding: 0;
+}
+
+.experience li {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+.logo {
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  animation: fadeIn 1s ease-out;
 }

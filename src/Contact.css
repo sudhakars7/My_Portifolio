@@ -1,0 +1,118 @@
+/* src/Contact.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.contact-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #e0e0e0 100%);
+  background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-title {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+  animation: fadeInDown 1s ease-out;
+}
+
+.contact-title::after {
+  content: '';
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.contact-options {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.contact-option:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  font-size: 2em;
+  margin-right: 15px;
+  color: #0073b1; /* LinkedIn blue for consistency */
+}
+
+.contact-option a,
+.contact-option span {
+  color: #333;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-option a:hover {
+  color: #0073b1;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
